@@ -1,6 +1,6 @@
-const { Post } = require('../models');
+const { Wallet } = require('../models');
 
-const postData = [
+const walletData = [
     {
         post_content: 'placeholder text values',
     },
@@ -10,7 +10,7 @@ const postData = [
     },
 ]
 
-const seedPosts = () => Post.bulkCreate(postData);
+const seedWallet = () => Post.bulkCreate(postData);
 
-module.exports = seedPosts;
+module.exports = seedWallet;
 
