@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Wallet} = require('../../models');
+const { Wallet } = require('../../models');
 
 // The `/api/products` endpoint
 

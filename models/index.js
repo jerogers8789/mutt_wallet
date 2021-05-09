@@ -1,6 +1,12 @@
 // import models
-const Wallet = require('./Wallet');
+const User = require('./User');
+
+// Products belongsTo Category
+Wallet.belongsTo(User, {
+    foreignKey: 'user_id'
+  });
 
 module.exports = {
- Wallet
+ User,
+ Wallet,
 };
