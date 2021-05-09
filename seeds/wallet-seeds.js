@@ -10,7 +10,7 @@ const walletData = [
     },
 ]
 
-const seedWallet = () => Post.bulkCreate(postData);
+const seedWallet = () => Wallet.bulkCreate(walletData);
 
 module.exports = seedWallet;
 
