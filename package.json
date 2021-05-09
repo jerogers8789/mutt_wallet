@@ -18,7 +18,12 @@
     "chai-bignumber": "3.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
+<<<<<<< HEAD
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.7",
+=======
     "express-sessions": "^1.0.6",
+>>>>>>> 74276a730d6669cdd1c5fc8e889e2da9a7c7afdc
     "mysql2": "^2.2.5",
     "react": "16.8.4",
     "react-bootstrap": "^1.5.2",
