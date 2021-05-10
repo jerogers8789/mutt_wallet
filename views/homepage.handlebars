@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUTT Wallet</title>
+    {{#each css}}
+        <link rel="stylesheet" href="/css/{{this}}">
+    {{/each}}
 </head>
 <nav>
     <a href="./homepage.handlebars">HOMEPAGE</a>
-    <a href="./MUTTCOIN.handlebars">About MUTT</a>
-    <a href="./anotherlink.handlbars">third link</a>
+    <a href="./muttcoin.html">About MUTT</a>
+    <a href="./anotherlink.handlebars">third link</a>
 </nav>
 <body>
-    <h1>Header in the body because I can, buzz off</h1>
+    <h1 style="text-align: center;">Header in the body because I can, buzz off</h1>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, aperiam, consequatur voluptatum quidem id vel odio cumque illo a tempora corporis labore incidunt in ducimus ullam! Culpa tenetur rem quidem.
     </p>
@@ -20,5 +23,7 @@
     <p>
         Better than nothing, but not by much. Worse than everything, because of a lot. Opposite phrases make for opposing meaning. Pretention is pretentious.
     </p>
+    
+{{{body}}}
 </body>
 </html>

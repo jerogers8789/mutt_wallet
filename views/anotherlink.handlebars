@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damn This Awful Modernity</title>
+    {{#each css}}
+        <link rel="stylesheet" href="/css/{{this}}">
+    {{/each}}
 </head>
 <nav>
+    <h1 style="text-align: center;"></h1>
     <a href="./homepage.handlebars">HOMEPAGE</a>
     <a href="./muttcoin.handlebars"></a>
-    <a href="./anotherlink.handlbars">third link</a>
+    <a href="./anotherlink.handlebars">third link</a>
 </nav>
+{{{body}}}
 <body>
     
 </body>
