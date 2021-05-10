@@ -3,10 +3,9 @@ const { Wallet } = require('../../models');
 
 // The `/api/products` endpoint
 
-// get wallet
+// get wallet data
 router.get('/', (req, res) => {
-  // find all wallet
-  // be sure to include its associated Category and Tag data
+  // find wallet
     Product.findAll({
       include: [{
             model: Wallet,
