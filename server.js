@@ -32,4 +32,7 @@ app.get("/", (req, res)=>{
     res.render("muttcoin")
 });
 
-app.listen(PORT, function(){console.log("portListening")});
+app.listen(PORT, function(){console.log("portListening")
+})
+}
+);
