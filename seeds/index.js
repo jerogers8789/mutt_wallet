@@ -1,4 +1,5 @@
 const seedWallet = require('./wallet-seeds');
+const seedUser = require('./user-seeds')
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
