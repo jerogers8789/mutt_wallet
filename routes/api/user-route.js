@@ -33,3 +33,8 @@ router.route('/:id')
         where: {
             id: req.params.id
         }
+    })
+} catch(err) {
+    res.status(500).json(err);
+}
+});
