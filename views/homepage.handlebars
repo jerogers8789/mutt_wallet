@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUTT Wallet</title>
+
+    {{#each css}}
+        <link rel="stylesheet" href="/css/{{this}}">
+    {{/each}}
 </head>
 <nav>
-    <a href="./homepage.handlebars">HOMEPAGE</a>
-    <a href="./MUTTCOIN.handlebars">WUT IZ MUTTCOIN??</a>
-    <a href="./anotherlink.handlbars">third link</a>
+    <a href="./homepage.handlebars" style="color: black;">HOMEPAGE</a>
+    <a href="./wallet.handlebars" style="color: black;">Wallet</a>
+    <a href="./muttcoin.html" >About MUTT</a>
 </nav>
+
+<body class="light-blue lighten-4">
+    <h1 style="text-align: center;">Header in the body because I can, buzz off</h1>
+
 <body>
     <h1></h1>
     <p>
@@ -19,5 +27,19 @@
     <p>
         Better than nothing, but not by much. Worse than everything, because of a lot. Opposite phrases make for opposing meaning. Pretention is pretentious.
     </p>
+    
+<br></br>
+<br></br>
+<br></br>
+
+<form action="/action_page.php">
+    <label for="fname">Username:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Password:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Login">
+</form>
+
+{{{body}}}
 </body>
 </html>
