@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Wallet } = require('../../models');
+
 router.route('/')
 .get(async (req, res) => {
     try {const userData = await User.findAll({
@@ -26,6 +27,7 @@ router.route('/')
         res.status(500).json(err);
     }
 });
+
 router.route('/:id')
 .get( async (req, res) => {
     try { const userData = await User.findByPK({
@@ -33,3 +35,4 @@ router.route('/:id')
         where: {
             id: req.params.id
         }
+    })}
