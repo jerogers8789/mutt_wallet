@@ -4,10 +4,6 @@ const walletData = [
     {
         post_content: 'placeholder text values',
     },
-    {
-    },
-    {
-    },
 ]
 
 const seedWallet = () => Wallet.bulkCreate(walletData);
