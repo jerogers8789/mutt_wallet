@@ -3,6 +3,7 @@ const { User } = require('../models');
 const userData = [
     {
         post_content: 'placeholder text values',
+        username: 'placeholder username',
     },
 ]
 

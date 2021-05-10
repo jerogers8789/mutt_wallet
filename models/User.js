@@ -10,7 +10,7 @@ class user extends Model {}
 user.init(
   {
     // define columns
-    wallet_id: { 
+    user_id: { 
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
@@ -22,13 +22,6 @@ user.init(
       allowNull: false
     }, 
 
-    category_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'category',
-        key: 'id'
-      }
-    },
   },
   
   {
