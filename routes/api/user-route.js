@@ -35,4 +35,12 @@ router.route('/:id')
         where: {
             id: req.params.id
         }
+<<<<<<< HEAD
     })}
+=======
+    })
+} catch(err) {
+    res.status(500).json(err);
+}
+});
+>>>>>>> 375931d8d11fa070ab5e659669df11959b65df08
