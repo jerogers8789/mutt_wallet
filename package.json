@@ -1,69 +1,23 @@
-{
-  "name": "eth-marketplace",
-  "version": "0.1.0",
-  "description": "An Ethereum Marketplace",
-  "author": "gregory@dappuniversity.com",
+{ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+
   "dependencies": {
-    "@openzeppelin/contracts": "^4.1.0",
-    "babel-polyfill": "6.26.0",
-    "babel-preset-env": "1.7.0",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-stage-2": "6.24.1",
-    "babel-preset-stage-3": "6.24.1",
-    "babel-register": "6.26.0",
     "bcrypt": "^5.0.1",
-    "bootstrap": "4.3.1",
-    "chai": "4.2.0",
-    "chai-as-promised": "7.1.1",
-    "chai-bignumber": "3.0.0",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^9.0.2",
+    "exphbs": "^1.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
     "express-session": "^1.17.1",
     "handlebars": "^4.7.7",
-    "express-sessions": "^1.0.6",
+    "heroku": "^7.2.0",
+    "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
-    "react": "16.8.4",
-    "react-bootstrap": "^1.5.2",
-    "react-dom": "16.8.4",
-    "react-scripts": "^4.0.3",
-    "sequelize": "^6.6.2",
-    "solc": "^0.5.0",
-    "solidity": "^0.0.1",
-    "truffle": "^5.0.5",
-    "web3": "1.0.0-beta.55",
-    "zeppelin-solidity": "^1.12.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "@babel/cli": "^7.13.16",
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.5.3"
-  },
-  "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jerogers8789/mutt_wallet.git"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jerogers8789/mutt_wallet/issues"
-  },
-  "homepage": "https://github.com/jerogers8789/mutt_wallet#readme"
+    "seed": "^0.4.4",
+    "sequelize": "^6.6.2"
+  }
 }
