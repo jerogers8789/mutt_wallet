@@ -15,15 +15,9 @@ const routes = require('./seeds');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(routes);
-
 // sync sequelize models to the database, then turn on the server
-sequelize.sync({force: false}).then(() => {
-
 app.engine("handlebars",hbs.engine);
-
 app.set("view engine", "handlebars");
-
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,"public")));
@@ -32,5 +26,7 @@ app.get("/", (req, res)=>{
     res.render("muttcoin")
 });
 
+app.use(routes);
+sequelize.sync({force: false}).then(() => {
 app.listen(PORT, function(){console.log("portListening")})
 })
