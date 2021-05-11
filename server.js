@@ -19,7 +19,7 @@ const sess = {
     secret: 'Super secret secret',
     cookie: {maxAge: 52000},
     resave: false,
-    saveUnitialized: true,
+    saveUninitialized: true,
     store: new SequelizeStore({
         db: sequelize
     })
@@ -35,9 +35,6 @@ app.use(routes);
 
 app.get("/", (req, res)=>{
     res.render("homepage")
-});
-app.get("/", (req, res)=>{
-    res.render("muttcoin")
 });
 
 sequelize.sync({force: false}).then(() => {
