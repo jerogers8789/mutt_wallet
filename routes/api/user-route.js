@@ -40,3 +40,4 @@ router.route('/:id')
     res.status(500).json(err);
 }
 });
+module.exports = router
